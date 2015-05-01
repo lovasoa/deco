@@ -90,7 +90,7 @@ Game.load = function(url) {
 }
 
 var game; //Global game variable
-Game.load("questions/test.txt");
+Game.load(window.location.hash.slice(1));
 
 window.onkeydown = function handleKeyDown(evt) {
   //Keybord arrows keycodes are 37, 38, 39 and 40
