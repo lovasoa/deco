@@ -99,3 +99,9 @@ window.onkeydown = function handleKeyDown(evt) {
     game.play(num);
   }
 };
+
+$(corners).each(function(i, corner) {
+  $("#answer-"+corner).click(function(){
+    game.play(i);
+  });
+});
