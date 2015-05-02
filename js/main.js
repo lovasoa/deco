@@ -68,7 +68,7 @@ Game.prototype.displayScore = function() {
 };
 Game.prototype.playSound = function(s) {
   var snd = $("#snd-"+s)[0];
-  snd.fastSeek(0);
+  snd.currentTime = 0;
   snd.play();
 };
 Game.load = function(url) {
